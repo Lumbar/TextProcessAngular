@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\Result\" />
+    <Folder Include="Core\Request\" />
+    <Folder Include="Core\Parameter\" />
+    <Folder Include="TextProcess\CQS\Command\Result\" />
+    <Folder Include="TextProcess\CQS\Command\Parameter\" />
+  </ItemGroup>
+
+</Project>

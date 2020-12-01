@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TextProcess.Application.Contracts\TextProcess.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TextProcess.Domain.Contracts\TextProcess.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\TextProcess.Infrastructure.Data.Contracts\TextProcess.Infrastructure.Data.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

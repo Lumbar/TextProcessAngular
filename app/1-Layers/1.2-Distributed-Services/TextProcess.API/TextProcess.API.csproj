@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Application.Contracts\TextProcess.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Application\TextProcess.Application.csproj" />
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Domain.Contracts\TextProcess.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Domain\TextProcess.Domain.csproj" />
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Infrastructure.Data.Contracts\TextProcess.Infrastructure.Data.Contracts.csproj" />
+    <ProjectReference Include="..\..\1.3-Distributed-Processes\1.3.1-Bounded Contexts\TextProcess.Infrastructure.Data\TextProcess.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\1.4-Infrastructure\1.4.5-Web\TextProcess.Infrastructure.Web\TextProcess.Infrastructure.Web.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<div>
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="optionForm">
+        <mat-form-field>
+          <mat-select placeholder="Opciones" formControlName="optionId" name="optionId" tabindex="1" required
+                      (selectionChange)="onOptionChange($event)">
+            <mat-option *ngFor="let option of textProcessVM.Options" [value]="option.OptionId">
+              {{option.Description}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
+</div>

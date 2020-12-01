@@ -1,0 +1,38 @@
+<div class="module-title">
+  <span class="span-title">TEXT PROCESS</span>
+</div>
+<div>
+  <app-order-options #orderOptions
+                     [textProcessVM]="textProcessVM">
+  </app-order-options>
+</div>
+
+<div>
+  <app-ordered-text #orderedText
+                    [textProcessVM]="textProcessVM"
+                    (method2)="method2()">
+  </app-ordered-text>
+</div>
+
+<div  class="al-center" *ngIf="textProcessVM.ResultOrder">
+  <div class="span-title">RESULTADOS</div>
+  <div *ngFor="let order of textProcessVM.ResultOrder.Options">
+    <div>
+      {{ order }}
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-statistics #statistics
+                  [textProcessVM]="textProcessVM"
+                  (method3)="method3()">
+  </app-statistics>
+</div>
+
+<div  class="al-center" *ngIf="textProcessVM.ResultStat">
+  <div class="span-title">RESULTADOS</div>
+  <div>HyphensQuantity: {{ textProcessVM.ResultStat.HyphensQuantity }}</div>
+  <div>SpacesQuantity: {{ textProcessVM.ResultStat.SpacesQuantity }}</div>
+  <div>WordQuantity: {{ textProcessVM.ResultStat.WordQuantity }}</div>
+</div>
