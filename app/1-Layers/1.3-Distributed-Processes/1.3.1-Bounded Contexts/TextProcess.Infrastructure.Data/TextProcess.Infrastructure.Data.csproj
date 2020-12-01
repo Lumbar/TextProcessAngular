@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CQS\TextProcess\Command\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\1.4-Infrastructure\1.4.4-Transport\TextProcess.Infrastructure.Transport\TextProcess.Infrastructure.Transport.csproj" />
+    <ProjectReference Include="..\TextProcess.Infrastructure.Data.Contracts\TextProcess.Infrastructure.Data.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
